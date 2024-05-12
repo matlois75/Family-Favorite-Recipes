@@ -1,0 +1,78 @@
+body {
+  font-family: 'Cardo', serif;
+  background-color: #e0f6fb;
+  text-align: center;
+}
+
+button {
+  padding: 30px 50px;
+  font-size: 45px;
+  margin: 30px;
+  width: 270px;
+  text-align: center;
+  background-color: #fdc3bc;
+  border-color: #feafa4;
+  border-width: 5px;
+  color: #013036;
+  border-radius: 11%;
+}
+
+.header {
+  background-color: #85dcff;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.header2 {
+  font-size: 35px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  position: relative;
+}
+
+.backButton {
+  font-size: 16px;
+  padding: 0px;
+  position: absolute;
+  left: 10px;
+  width:100px;
+}
+
+.table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#addRecipeForm {
+  margin-top: 5px;
+}
+
+.remove-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;          /* Removes default padding */
+  border: none;        /* Removes default border */
+  color: white;
+  background-color: grey;
+  border-radius: 50%;  /* Makes the background circular */
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;   /* Helps center the text vertically */
+  text-align: center;  /* Helps center the text horizontally */
+  overflow: hidden;    /* Ensures no overflow */
+  box-sizing: border-box; /* Includes padding and border in width/height */
+  margin: 0px;
+  margin-right: 10px;
+  display: none;
+}
+
+
