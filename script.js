@@ -22,7 +22,7 @@ const database = getDatabase(app);
 
 
 function loadPage(name) {
-  location.href = `${name}.html`;
+  location.href = `pages/${name}.html`;
 }
 window.loadPage = loadPage;
 
