@@ -50,7 +50,7 @@ function fetchRecipes(familyMember) {
         const linkCell = row.insertCell(1);
         const imageCell = row.insertCell(2);
 
-        titleCell.innerHTML = `<button class='remove-icon' onclick='removeRecipe("${familyMember}", "${key}")' style='display: ${areRemoveIconsVisible ? 'inline-block' : 'none'};'>-</button> ${recipe.title}`;
+        titleCell.innerHTML = `<img src='../removal-icon.png' alt='Remove' class='remove-icon' onclick='removeRecipe("${familyMember}", "${key}")' style='display: ${areRemoveIconsVisible ? 'inline' : 'none'}; cursor: pointer;'/> ${recipe.title}`;
         linkCell.innerHTML = `<a href="${recipe.link}" target="_blank">View Recipe</a>`;
         imageCell.innerHTML = `<img src="${recipe.image}" alt="${recipe.title}" style="width:100px;">`;
     }

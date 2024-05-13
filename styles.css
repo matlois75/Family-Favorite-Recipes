@@ -1,30 +1,32 @@
 body {
-  font-family: 'Cardo', serif;
-  background-color: #e0f6fb;
+  font-family: "Baskervville", serif;
+  background-color: #e9b055b8;
   text-align: center;
 }
 
 button {
   padding: 30px 50px;
-  font-size: 45px;
+  font-size: 35px;
   margin: 30px;
-  width: 270px;
+  width: 250px;
   text-align: center;
-  background-color: #fdc3bc;
-  border-color: #feafa4;
+  background-color: #e6cdb2e7;
+  border-color: #763413b9;
   border-width: 5px;
-  color: #013036;
+  color: #50240ed6;
   border-radius: 11%;
+  display: inline-block;
 }
 
 .header {
-  background-color: #85dcff;
+  background-color: #91441e9b;
   width: 100%;
   text-align: center;
   padding: 15px;
   font-weight: bold;
   font-size: 40px;
   margin-bottom: 40px;
+  color:#55250dd2;
 }
 
 .header2 {
@@ -44,9 +46,21 @@ button {
   width:100px;
 }
 
+@media (max-width: 700px) {
+  .header2 {
+    font-size: 25px;
+  }
+
+  .backButton {
+    font-size: 12px;
+    width: 70px;
+  }
+}
+
 .table {
   width: 100%;
   margin-top: 20px;
+  border-bottom: 2px solid #505050;
 }
 
 #addRecipeForm {
@@ -54,25 +68,14 @@ button {
 }
 
 .remove-icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  padding: 0;          /* Removes default padding */
-  border: none;        /* Removes default border */
-  color: white;
-  background-color: grey;
+  width: 15px;
   border-radius: 50%;  /* Makes the background circular */
   cursor: pointer;
-  font-size: 16px;
-  line-height: 20px;   /* Helps center the text vertically */
-  text-align: center;  /* Helps center the text horizontally */
-  overflow: hidden;    /* Ensures no overflow */
-  box-sizing: border-box; /* Includes padding and border in width/height */
   margin: 0px;
   margin-right: 10px;
   display: none;
 }
 
-
+#btn-control {
+  font-size: 16px;
+}

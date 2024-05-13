@@ -19,7 +19,7 @@
   <body>
     <div class="header header2">
       <button
-        class="btn btn-secondary backButton"
+        class="btn btn-outline-dark backButton"
         onclick="location.href='dashboard.html'"
       >
         Go back
@@ -29,7 +29,7 @@
     <div class="container mt-5">
       <button
         id="btn-add"
-        class="btn btn-primary"
+        class="btn btn-outline-success"
         style="display: inline-block"
         onclick="showAddRecipeForm()"
       >
@@ -37,16 +37,17 @@
       </button>
       <button
         id="btn-remove"
-        class="btn btn-danger"
+        class="btn btn-outline-danger"
+        style="display: none"
         onclick="toggleRemoveIcons()"
       >
         Remove a Recipe
       </button>
       <div id="addRecipeForm" style="display: none">
-        <button class="btn btn-success" onclick="addRecipe('Fanny')">
+        <button class="btn btn-outline-success" onclick="addRecipe('Fanny')">
           Submit Recipe
         </button>
-        <button class="btn btn-warning" onclick="cancelRecipe()">
+        <button class="btn btn-outline-danger" onclick="cancelRecipe()">
           Cancel Recipe
         </button>
         <input
@@ -83,7 +84,7 @@
       </table>
     </div>
 
-    <script type="module" src="../script.js"></script>
+    <script type="module" defer src="../script.js"></script>
     <script>
       window.onload = () => {
         fetchRecipes("Fanny");
